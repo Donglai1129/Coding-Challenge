@@ -1,34 +1,63 @@
-body {
-    background-color: rgb(200,210,80);
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(12, 10, 138);
-    line-height: 2em;
-    letter-spacing: 0.23em;
-    
-}
 
-h1 {
-font-family: 'Courier New', Courier, monospace;
-font-size: medium;
-font-weight: bolder;
-text-indent: 0em;
-text-transform: uppercase;
-text-align: center;
-}
-
-h2 { 
-font-family: 'Courier New', Courier, monospace;
-font-size: larger;
-font-style: oblique;
-line-height: normal;
-color: rgb(100,100,0)
-}
-
-h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    font-style: oblique;
-    line-height: normal;
-    letter-spacing: 0.14em;
-    text-align: center;
-}
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card__excerpt {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .card__more {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0073e6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .card__more:hover {
+    background-color: #005bb5;
+  }
+  
+  .card__more:active {
+    background-color: #003f80;
+  }
+  @media screen and (min-width: 1024px) {
+    .cards {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .card {
+      flex: 1;
+      max-width: 30%;
+    }
+  }
