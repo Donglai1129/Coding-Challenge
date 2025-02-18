@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Design</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #dbe9f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Kantumruy Pro', sans-serif;
+            font-weight: 700;
+            padding: 2rem;
+        }
+        .text-container {
+            width: 60%;
+            font-size: 6rem;
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            line-height: 1.5;
+            text-align: left;
+            font-family: 'Kantumruy Pro', sans-serif;
+        }
+        .bold-text {
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            font-family: 'Kantumruy Pro', sans-serif;
+        }
+        .fire-effect {
+            display: inline-block;
+            color: #ffffff;
+            font-weight: 700;
+            transition: text-shadow 0.3s ease-in-out;
+            text-decoration: none;
+            font-family: 'Kantumruy Pro', sans-serif;
+        }
+        .fire-effect:hover {
+            animation: fireGlow 0.3s infinite alternate;
+        }
+        @keyframes fireGlow {
+            0% { text-shadow: 0 0 5px #ff4500, 0 0 10px #ff6347, 0 0 15px #ff4500; }
+            100% { text-shadow: 0 0 10px #ff6347, 0 0 20px #ff4500, 0 0 30px #ff6347; }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        And the <a href="entry6.html" class="fire-effect">fire flames</a> with<br>
+        a <span class="bold-text">bubbling sound</span> for<br>
+        world<br>
+        Is more spiteful and gay<br>
+        than one supposes—
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #dbe9f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 2rem;
+            transition: background-color 1s ease-in-out;
+            font-family: 'Kantumruy Pro', sans-serif;
+            font-weight: 700;
+        }
+        .text-container {
+            width: 35%;
+            font-size: 6.5rem;
+            font-weight: 700;
+            color: black;
+            line-height: 1.2;
+            text-align: left;
+            transition: color 1s ease-in-out;
+            font-family: 'Kantumruy Pro', sans-serif;
+        }
+        .black {
+            color: black;
+            transition: color 0.5s ease-in-out;
+            font-family: 'Kantumruy Pro', sans-serif;
+            font-weight: 700;
+        }
+        .white {
+            color: white;
+            font-weight: 700;
+            transition: color 0.5s ease-in-out;
+            text-decoration: none;
+            font-family: 'Kantumruy Pro', sans-serif;
+        }
+        .text-container:hover .black {
+            color: #7d98c8;
+        }
+        .text-container:hover .white {
+            color: #2c3e50;
+        }
+        .text-container:hover body {
+            background-color: #b0c4de;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <span class="black">I peel and portion</span><br>
+        <span class="black">A</span> <a href="entry5.html" class="white">tangerine</a> <span class="black">and spit the</span><br>
+        <span class="black">pips and feel</span><br>
+        <span class="black">The</span> <a href="entry5.html" class="white">drunkenness</a> <span class="black">of</span><br>
+        <span class="black">things being various.</span>
+    </div>
+</body>
+</html>
